@@ -49,10 +49,15 @@ plain event data cannot tell you.
 
 ## Reproduce
 
+**Notebook (recommended):** `analysis/profile.ipynb` — open it on GitHub (it
+renders with all figures embedded) or run locally:
+
 ```bash
-pip install pandas matplotlib mplsoccer
-python analysis/profile.py   # reads data/ (already downloaded), writes output/
+pip install pandas matplotlib mplsoccer jupyter
+jupyter execute analysis/profile.ipynb --inplace   # from the repo root
 ```
+
+**Script:** `python analysis/profile.py` (same figures, writes to `output/`).
 
 `data/` holds the 7 Argentina matches of the 2022 World Cup (events +
 360 frames). Downloaded from StatsBomb open data on 2026-11-13.
